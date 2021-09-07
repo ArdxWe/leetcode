@@ -1,21 +1,21 @@
-/* Given a collection of numbers, nums, that might contain duplicates, 
+/* Given a collection of numbers, nums, that might contain duplicates,
    return all possible unique permutations in any order. */
 
-
-#include <string>
 #include <iostream>
+#include <string>
 #include <unordered_map>
 #include <vector>
 
-using std::unordered_map;
-using std::string;
-using std::vector;
-using std::endl;
 using std::cout;
+using std::endl;
+using std::string;
+using std::unordered_map;
+using std::vector;
 
 class Solution {
  private:
   int size_ = 0;
+
  public:
   vector<vector<int>> permuteUnique(vector<int>& nums) {
     vector<vector<int>> res;
@@ -31,7 +31,8 @@ class Solution {
     return res;
   }
 
-  void f(vector<int>& now, int index, vector<vector<int>>& res, unordered_map<int, int>& map) {
+  void f(vector<int>& now, int index, vector<vector<int>>& res,
+         unordered_map<int, int>& map) {
     if (now.size() == size_) {
       res.push_back(now);
     } else {
@@ -39,7 +40,7 @@ class Solution {
         if (t.second > 0) {
           now.push_back(t.first);
           t.second--;
-          f(now, index+1, res, map);
+          f(now, index + 1, res, map);
           t.second++;
           now.pop_back();
         }

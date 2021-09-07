@@ -3,15 +3,15 @@
  * You have to rotate the image in-place,
  * which means you have to modify the input 2D matrix directly.
  * DO NOT allocate another 2D matrix and do the rotation.
-*/
+ */
 
+#include <cassert>
 #include <iostream>
 #include <vector>
-#include <cassert>
 
-using std::vector;
-using std::endl;
 using std::cout;
+using std::endl;
+using std::vector;
 
 class Solution {
  public:

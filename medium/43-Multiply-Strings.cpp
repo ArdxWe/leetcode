@@ -1,25 +1,26 @@
 /* Given two non-negative integers num1 and num2 represented as strings,
  * return the product of num1 and num2, also represented as a string.
- * 
- * Note: You must not use any built-in BigInteger library or convert the inputs to integer directly.
-*/
+ *
+ * Note: You must not use any built-in BigInteger library or convert the inputs
+ * to integer directly.
+ */
 
-#include <string>
+#include <cassert>
 #include <iostream>
 #include <map>
-#include <vector>
-#include <cassert>
-#include <utility>
 #include <numeric>
+#include <string>
+#include <utility>
+#include <vector>
 
-using std::map;
-using std::string;
-using std::vector;
-using std::pair;
+using std::accumulate;
 using std::cout;
 using std::endl;
-using std::accumulate;
+using std::map;
+using std::pair;
+using std::string;
 using std::to_string;
+using std::vector;
 
 class Solution {
  public:
@@ -56,7 +57,7 @@ class Solution {
   string multiply(string num1, string num2) {
     if (num1 == "0" || num2 == "0") return string{"0"};
 
-    map<int, vector<int>> res; // weight->value
+    map<int, vector<int>> res;  // weight->value
 
     int result, key;
     for (int i = static_cast<int>(num1.size() - 1); i >= 0; i--) {
@@ -65,7 +66,8 @@ class Solution {
         assert(num2[j] >= '0' && num2[j] <= '9');
 
         result = (num1[i] - '0') * (num2[j] - '0');
-        key = static_cast<int>(num1.size()) - 1 - i + static_cast<int>(num2.size()) - 1 - j;
+        key = static_cast<int>(num1.size()) - 1 - i +
+              static_cast<int>(num2.size()) - 1 - j;
 
         if (result > 9) {
           res[key + 1].push_back(result / 10);
