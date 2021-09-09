@@ -1,5 +1,6 @@
 /* Given a collection of numbers, nums, that might contain duplicates,
-   return all possible unique permutations in any order. */
+ * return all possible unique permutations in any order.
+ */
 
 #include <iostream>
 #include <string>

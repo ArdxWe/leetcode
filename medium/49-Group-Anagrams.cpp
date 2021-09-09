@@ -59,6 +59,7 @@ class Solution {
   unordered_map<string, vector<int>> map_{};
 };
 
+/*
 int main() {
   Solution s;
   vector<string> x = {"ddddddddddg", "dgggggggggg"};
@@ -71,4 +72,4 @@ int main() {
   }
 
   return 0;
-}
+} */
