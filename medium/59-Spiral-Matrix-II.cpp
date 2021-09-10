@@ -89,6 +89,7 @@ class Solution {
   }
 };
 
+/*
 int main() {
   Solution s;
   auto x = s.generateMatrix(10000);
@@ -98,4 +99,4 @@ int main() {
     }
     cout << endl;
   }
-}
+} */

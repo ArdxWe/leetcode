@@ -51,6 +51,7 @@ class Solution {
   }
 };
 
+/*
 int main() {
   vector<vector<int>> x;
   x.push_back({0, 1});
@@ -59,4 +60,4 @@ int main() {
   Solution s;
   cout << s.uniquePathsWithObstacles(x) << endl;
   return 0;
-}
+} */

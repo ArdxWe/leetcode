@@ -86,10 +86,8 @@ class Solution {
 };
 
 /*
-int main()
-{
+int main() {
   Solution s;
   cout << s.multiply(string{"23108814760092"}, string{"55183904456427981"});
   return 0;
-}
-*/
+} */
