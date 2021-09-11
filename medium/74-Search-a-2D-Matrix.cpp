@@ -33,7 +33,7 @@ class Solution {
         end = mid - 1;
       }
     }
-    
+
     int col = mid;
     if (mid != 0 && matrix[mid][0] > target) {
       col = mid - 1;
