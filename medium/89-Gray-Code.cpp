@@ -42,6 +42,7 @@ class Solution {
   }
 };
 
+/*
 int main() {
   Solution s;
   auto v = s.grayCode(2);
@@ -51,3 +52,4 @@ int main() {
   cout << endl;
   return 0;
 }
+*/
