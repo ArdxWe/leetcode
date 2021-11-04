@@ -10,7 +10,7 @@
 
 #include <iostream>
 #include <string>
-#include <stringstream>
+#include <sstream>
 #include <unordered_map>
 
 using std::cout;
