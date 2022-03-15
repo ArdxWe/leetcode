@@ -1,7 +1,7 @@
 /*
  * Given an array of integers nums and an integer k, return the number of
- * contiguous sub arrays where the product of all the elements in the subarray is
- * strictly less than k.
+ * contiguous sub arrays where the product of all the elements in the subarray
+ * is strictly less than k.
  */
 
 #include <cstdint>
